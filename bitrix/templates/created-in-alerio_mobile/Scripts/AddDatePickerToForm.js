@@ -1,0 +1,3 @@
+$(function() {		
+	$( "#DateFindFrom, #DateFindTo" ).datepicker();
+});

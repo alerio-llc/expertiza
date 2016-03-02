@@ -1,0 +1,109 @@
+//блок новостей-------------------------------------------------------
+
+.DayOfNews {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 !important;
+}
+
+.MonthOfNews {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.YearOfNews {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.TitleOfNews {
+    font-size: 14px;
+    margin: 0 !important;
+    padding: 0 !important;
+    color:#01b4dd;
+}  
+.TitleOfNews a {
+    color:#01b4dd;
+}
+
+.AnonsOfNews {
+    font-size: 12px;
+}        
+
+.ThemeOfNews {
+	background: url(images/bgThemeOfNews.png) no-repeat 5px 8px;
+	color: #959595;
+	border-top: #cecece 1px solid;
+    font-size: 11px;
+    padding: 3px 0 0 23px;
+    text-shadow: 0px -1px 0px #efefef;
+}
+
+.SignatureOfNews {
+    color: #959595;
+    border-top: #cecece 1px solid;
+    font-size: 11px;
+    padding: 3px 0 0 0;
+    text-shadow: 0px -1px 0px #efefef;
+}
+
+.SuperNews {
+    margin: 5px !important;
+}
+
+.ItemOfNewsList, .ItemOfHotNews {
+    margin: 10px 0 !important;
+}
+
+.ItemOfNewsList td, .ItemOfHotNews td, .SuperNews td {
+    background: #FFFFFF !important;
+    border: 0 !important;
+    padding: 5px !important;
+    vertical-align: top !important;
+}  
+
+
+/* зададим ширины  ячеек*/
+/* первая ячейка с картинкой*/
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(1),
+.ItemOfHotNews tr:nth-of-type(1) td:nth-of-type(1)
+	{
+    width: 50px !important;
+    text-align: left;
+    padding: 0;
+}
+
+
+
+/* вторая ячейка с датой новости или временем для горячей новости */
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(2),
+.ItemOfHotNews tr:nth-of-type(1) td:nth-of-type(2)
+	{
+    width: 50px !important;
+}    
+
+/* третья ячейка с темой новости */
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(3){
+    width: 650px  !important;
+}  
+
+.HotNewsTime {
+    color: #de2930;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin: 1px 0 0 0 !important;
+}
+
+.SuperNews {
+    width: 330px;
+}
+
+.SuperNews h2 {
+    color: #de2930;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 10px 0;
+}

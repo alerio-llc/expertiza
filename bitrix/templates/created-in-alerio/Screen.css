@@ -1,0 +1,607 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/
+
+@media screen { 
+	
+	/* =СВОИ ШРИФТЫ=       
+    -----------------------------------------------------------------------------*/ 
+   @font-face {
+    font-family: Roboto; /* Гарнитура шрифта */
+    src: url(Fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+   
+    /* =СТИЛИ ПРИБИТОГО ФУТЕРА=       
+    -----------------------------------------------------------------------------*/ 
+    html, 
+	body, 
+	.PseudoBody, 
+	#Wrapper {
+        height: 100%;
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}	 
+   
+    #Wrapper {
+        background: #999;
+        height: auto !important;
+        height: 100%;
+       /* min-height: 100%; */  /*скроем это, чтобы на главной странице не было вертикальной резинки*/        
+      
+   }
+   
+   #InternalPage + #Wrapper { /* стили для внутреннестраницы фон и вертикальная резинка */
+        background: url(Images/bgWrapper.png);      /* фон */
+        min-height: 100%;                           /* вертикальная резинка */
+   }
+   
+   
+   
+   
+    #AdditionalNav + #Content {
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+    
+    #Header + #Content {
+        padding-bottom: 155px;
+        overflow: hidden;
+    }
+   
+   #BottomBar {
+        display: table; 
+        height: 110px; 
+        margin-top: -155px; /* сумма высот ниженей панели и футера */
+        /* когда футер выровнен по центру : --начало-- */
+        margin-left:  auto;
+        margin-right:  auto;
+        /* когда футер выровнен по центру : --конец-- */
+        width: 1260px;
+    }
+    
+   #BottomBar + #Footer {
+       margin: 0 auto;
+       
+   }
+   
+   #Wrapper + #Footer {
+        margin-top: -45px;
+        /* когда футер выровнен по центру : --начало-- */
+        margin-left:  auto;
+        margin-right:  auto;
+        /* когда футер выровнен по центру : --конец-- */
+   }
+   
+     
+   #Footer {  /* перенетси эти стили дальше под контент */ 
+        background: #f00;
+        height: 25px; /* =45-2*10px, где 10px - это padding */
+        width: 1240px;  /* = ширине обертки */ /* =1260-2*10px, где 10px - это padding */
+   }
+    
+	/* =БАЗОВЫЕ СТИЛИ=       
+	-----------------------------------------------------------------------------*/	
+	.PseudoBody {
+        width: 100%;
+    }
+input{
+padding:10px;
+margin-top:10px;
+}
+    
+    body {
+        /*background: #f3f9fc;  /* TODO: Узнать точно у Кости, какой цвет у фона */
+        background: url(/Images/bgBody.png);
+        color: #474747;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        min-width: 1260px;
+        text-align: juistfy;
+        line-height: 150%;
+        overflow: scroll;
+    }
+		
+	.PseudoBody h1,
+    .PseudoBody h2,
+    .PseudoBody h3,
+    .PseudoBody h4,
+    .PseudoBody h5,
+    .PseudoBody h6,
+    .PseudoBody p,
+    .PseudoBody pre,
+    .PseudoBody blockquote,
+    .PseudoBody form,
+    .PseudoBody fieldset,
+    .PseudoBody table,
+    .PseudoBody ul,
+    .PseudoBody hr {
+        margin: 5px 0;
+    }
+    
+    .PseudoBody h1,
+    .PseudoBody h2,
+    .PseudoBody h3,
+    .PseudoBody h4,
+    .PseudoBody h5,
+    .PseudoBody h6 {
+       color: #222222;
+       font-weight: bold;
+       line-height: 120%;
+       margin: 20px 0 5px 0;
+    }
+    
+    .PseudoBody h1 {
+        font-size: 25px;
+        font-weight: normal;
+    }
+    
+    #MainContent h1:first-child {
+        margin-top: 0px;
+    }
+    
+    .PseudoBody h2 {
+        font-size: 22px;
+    }
+    
+    .PseudoBody h3 {
+        color: #01b4dd;
+        font-size: 19px;
+        font-weight: normal;
+    }
+    
+    .PseudoBody h4 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .PseudoBody h5 {
+        font-size: 15px;
+    }
+    
+    .PseudoBody h6 {
+        color: #9c9c9c;
+        font-size: 12px;
+    }
+    
+    .PseudoBody ul,
+    .PseudoBody ol {
+        list-style-position: outside;
+        margin-left: 20px;
+    }
+    
+    .PseudoBody ul {
+        display: block;
+        list-style-type: disc;
+    }
+    
+    .PseudoBody ol {
+        display: block;
+        list-style-type: decimal;
+        padding: 3px 0;
+    }
+    
+    .PseudoBody li {
+        padding: 3px 0;
+    }
+    
+    .PseudoBody table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 15px 0;
+         
+    }
+    
+    .PseudoBody table th, .PseudoBody table td {
+        font-size: 11px;
+        border-left: #ffffff 1px solid;
+        border-bottom: #ffffff 1px solid;
+    }
+    
+    .PseudoBody table td {
+        padding: 2px 5px;
+    }
+    
+    .PseudoBody table th {
+        background: url(Images/bgTableTitle.png) top;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 4px 5px;
+        text-align: center;
+    }
+    
+    .PseudoBody table tr:nth-child(even) {
+        background: #f3fbfd;
+    }  
+    
+    .PseudoBody table tr:nth-child(odd) {
+        background: #e7f8fd;
+    }
+    
+    .PseudoBody table tr:hover {
+        background: #e1f7fd;
+    }   
+    
+    .PseudoBody a,
+    .PseudoBody a:hover,
+    .PseudoBody a:link,
+    .PseudoBody a:visited {
+        color: #01b4dd;
+        cursor: pointer !important;
+        outline: medium none;
+    }
+    
+    .PseudoBody a[target="_blank"],
+    .PseudoBody a[target="blank"]{
+        background: url(Images/iconOut.png) no-repeat right center;
+        color: #01b4dd;
+        font-weight: bold;
+        padding: 0 12px 0 0;
+    }
+    
+    .PseudoBody img {
+        border: 0;      /* Убирает рамку у посещенных по ссылке изображений */
+    }
+    
+    .PseudoBody hr { 
+        border-top: #000000 dotted 1px;
+        color: transparent;
+    }
+    
+    .PseudoBody input, 
+    .PseudoBody textarea, 
+    .PseudoBody select {
+        background: #eeeeee;
+        border: 1px solid #a7a7a7;
+        padding: 2px 2px;
+    }
+    
+    .PseudoBody input[type=text], .PseudoBody textarea {
+        width:100%;
+    }
+    
+    
+    
+    .PseudoBody label {
+        display: block;
+        text-align: right;
+    }
+    
+    .PseudoBody label span {
+        color: red;
+    }
+    
+    .PseudoBody b, 
+    .PseudoBody strong {
+        font-weight: bold !important; 
+    }
+    
+    .PseudoBody p b, 
+    .PseudoBody p strong {
+        /*color: #7b7b7b;*/
+        color: #3c3c3c;
+    }
+	
+	.PseudoBody div {
+        /*border: #000000 1px solid;          /*TODO: убрать границу по окончании верстки*/
+    }    
+    
+	/* =ОФОРМЛЕНИЕ ДОКУМЕНТА=  
+	/*  Далее файл структурируем по принципу "сверху вниз": список стилей составляеся в том порядке, в котором данные стили применяются (появляются в документе) на странице.
+	/*  Любая секция структуры документа: #Header(Шапка), #TopBar(Верхняя панель), #LeftSidebar (Левая боковая панель), #RightSidebar (Правая боковая панель), #BottomBar (Нижняя)
+    /*  могу содержать меню и другую навигацию: #GeneralNav - основное меню, #SectionNav - меню раздела, #SubNav - подменю, #AdditionalNav - дополнительное меню (навигация).
+    -----------------------------------------------------------------------------*/
+	/* Обертка : --начало-- */
+    #Wrapper {
+        background: #ffffff;
+        box-shadow:0 1px 4px rgba(211, 233, 243, 0.9);
+        -moz-box-shadow:0 1px 4px rgba(211, 233, 243, 0.9);
+        -webkit-box-shadow:0 1px 4px rgba(211, 233, 243, 0.9);
+        /*border: #000000 1px solid !important;*/
+        margin: 0 auto;
+        text-align: left;
+        width: 1260px; /* Для адаптивной верстки это значение необходимо изменить на 100% */
+	}
+	
+		/* Шапка : --начало-- */
+		#Header {
+            background: #ffffff url(Images/bgHeader.png) top no-repeat;
+            min-height: 145px;
+            padding: 10px 30px 0 30px;
+            
+	    }
+	    
+            /* Branding : начало -- */
+		    #Branding {
+		        /*border:  1px solid;*/
+		        background: url(Images/bgShadowTop.png) bottom no-repeat;
+		        width: 1200px;
+		        min-height: 140px;
+		    }
+		          
+			    #Symbol {
+                   /* border: 1px solid;*/
+			        display: block;
+			        height: 124px;
+			        margin: 0 20px 0 5px;
+			        width: 95px;
+			    }
+			    
+			    #Logo {
+			         color: #016285; 
+			         font-size: 26px; 
+			         font-weight: normal;
+			    }
+			/* Branding : конец -- */
+			    
+	    /* Шапка : --конец-- */
+	    
+	    /* Основная часть страницы : --начало-- */
+	    #Content {
+	        width: 100%;
+	    }
+            
+            /* Верхняя панель : --начало-- */	    
+		    #TopBar {
+		          display: table;  
+		          background: #ffffff;
+		          width: 100%;
+		    }
+		          
+		          #ControlButtons {
+		              display: table-cell; 
+		              padding: 7px 15px  3px 15px; 
+		              text-align: center; 
+		              vertical-align: center; 
+		              width: 30%;
+		          }
+		          
+		          #ControlButtons img {
+		              margin: 0 12px; 
+		              vertical-align: middle;
+		          }
+		          
+		          
+		          #Metcast {
+		              display: table-cell; 
+		              text-align: right; 
+		              padding: 7px 15px  3px 15px; 
+		              vertical-align: middle;  
+		              width: 30%;
+		          }
+		    /* Верхняя панель : --конец-- */
+		    
+		    /* Основное меню : --начало-- */
+		    #GeneralNav{
+                
+                }
+		    /* Основное меню : --конец-- */
+		    
+		    /* Левая боковая панель : --начало-- */
+		    #LeftSidebar {
+                float: left;
+                padding: 20px 10px 20px 5px;
+                width: 235px;
+		        
+		    }
+                               
+                
+		    /* Левая боковая панель : --конец-- */
+		    
+		    /* Правила для адаптивной верстки : --начало-- */
+		    
+		    /* Содержимое страницы : --начало-- */
+		    #MainContent {                                                                    /* для случая, когда 1 колонка */
+		    	/*padding: 20px;*/
+		    	width: 100%;
+		    }
+		    
+		    /* Содержимое страницы : --конец-- */
+		    
+		    
+		    #LeftSidebar + #MainContent {                                                     /* для случая, когда 2 колонки */
+			    width: 80%;
+			    margin-left: 20% /* = leftside width */
+			     
+			}
+			
+			#RightSidebar + #MainContent {                                                   /* для случая, когда 3 колонки */
+			    background: #ebf3f5;
+			    margin-left: 250px; /*  = #LeftSidebar width */
+			    margin-right: 250px; /*  = #RightSidebar width */
+			    padding: 10px 20px;
+			    width: 720px;        /* = #Content - #LeftSidebar - #RightSidebar */
+			}
+		    /* правила для адаптивной верстки : --конец-- */
+	      
+                #MainContent h1, #MainContent h2, #MainContent p {
+
+			    }		      
+			
+			
+			/* Правая боковая панель : --начало-- */
+			#RightSidebar {	        
+		        float: right;
+		        padding: 20px;
+                width: 210px;
+		    }
+		          #RightSidebar > h3 {
+		              margin-top: 0;
+                  }
+                        #RightSidebar > h3 > img {
+                            vertical-align: sub;
+                        }  
+                #RightSidebar h1, #RightSidebar h2, #RightSidebar p {
+			        
+			    }
+			    
+			    #RightSidebar > img {
+			         margin: 10px 0;
+			    }
+		    /* Правая боковая панель : --конец-- */
+		    
+		    /* Нижняя панель : --начало-- */
+		    #BottomBar {
+		        background: url(Images/bgBottomBar.png);     
+                clear: both;
+		    }
+		          #BottomBar p {
+		              display: table-cell; 
+		              text-align: center; 
+		              vertical-align: middle;
+		          }
+		          
+			          #BottomBar p a {
+			             background: none; 
+			          }
+		    /* Нижняя панель : --конец-- */
+		    
+	    /* Основная часть страницы : --конец-- */
+	    
+	    /* Подвал : --начало-- */
+	    /* Примечание: подвал может быть вынесен за пределы обертки, если это необходим для резинки в высоту*/
+	    #Footer {
+	       background: #daf0fb;
+           clear: both;
+           padding: 10px;
+	    }
+            #Alerio {
+                background: url(Images/Alerio.png) center right no-repeat; 
+                font-size: 12px;
+                height: 20px; 
+                margin: 0 auto;  
+                padding: 0 100px 5px 10px;
+                width: 265px;
+            }
+            
+            #Alerio a {
+                border-bottom: 1px dotted;
+                color: #000000;
+                text-decoration: none; 
+            }
+	    /* Подвал : --конец-- */
+    
+    /* Обертка : --конец-- */
+      
+    /* =КЛАССЫ, ОБЛЕГЧАЮЩИЕ ПРОЦЕСС ВЕРСТКИ МАКЕТА=
+    -----------------------------------------------------------------------------*/    
+    .FloatLeft /* Or whatever name you like */ {
+        float: left;
+    }
+     
+    .FloatRight /* Or whatever name you like */ {
+        float: right;
+    }
+    
+    /* Class for clearing floats */
+    .Сlear {
+        clear: both;
+    }
+    
+    /* =КЛАССЫ ОФОРМЛЕНИЯ ОШИБОК
+    -----------------------------------------------------------------------------*/
+    .error {
+        color: red;
+    }
+    
+    input.error,
+    textarea.error  {
+        color: red;
+        border-color: red !important;
+    }
+    
+    p.error {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }	
+    
+    /* =КЛАССЫ ВЫРАВНИВАНИЯ INLINE ЭЛЕМЕНТОВ
+    -----------------------------------------------------------------------------*/
+    .Left {
+        text-align: left !important;
+    }
+    
+    .Right {
+        text-align: right !important;
+    }
+    
+    .Center {
+        text-align: center !important;
+    }
+    
+     /* =КЛАССЫ ОФОРМЛЕНИЯ ТЕКСТА
+    -----------------------------------------------------------------------------*/ 
+     /* Заголовок страницы : --начало-- */
+    h1.Title {
+        margin-top: 3px;
+    }
+     /* Заголовок страницы : --конец-- */
+     
+     
+     #Metcast img
+     {
+        width: 30px !important;
+        vertical-align: middle;
+     }
+     
+     .fieldset td, 
+     .fieldset th, 
+     .fieldset tr:nth-child(even), 
+     .fieldset tr:nth-child(odd), 
+     .fieldset tr:hover {
+            border: none !important;
+            background: none !important;
+     }
+     
+     
+    .ListItem, .HalfOfListItem {
+        background: #FFFFFF;
+        box-shadow:         0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+        -moz-box-shadow:    0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+        padding: 0px 5px 0 5px;
+        margin: 5px 0;
+        
+        border: #ffffff 5px solid; 
+    }
+    
+    .ListItemPushed {
+    
+    
+        background: #ced9db;
+        box-shadow: 0px 0px 5px 0px rgba(151, 159, 160, 1)  inset;
+        -moz-box-shadow: 0px 0px 5px 0px rgba(151, 159, 160, 1)  inset;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(151, 159, 160, 1)  inset;
+        padding: 5px 10px 5px 10px;
+        margin : 0 !important;
+         
+    }
+    
+    .HalfOfListItem {
+        margin: 0px 10px 5px 0;
+        width: 340px !important;
+    }
+    
+    td.FullWidth {
+        width: 100%;
+    }
+    
+    .picR {
+        display: inline-block;
+        vertical-align: top;
+        align: right;
+    } 
+    
+    .picL {
+        display: inline-block;
+        vertical-align: top;
+        alirn: left;
+    } 
+
+

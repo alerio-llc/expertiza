@@ -1,0 +1,76 @@
+/* Меню разделов : --начало-- */
+#SectionNav {
+    list-style-type: none;
+    margin: 0;
+}
+
+#SectionNav > ul {
+    background: #eaf8fb;
+    border: #aae0ec 1px solid;
+    box-shadow: inset 0 15px 10px  -15px #aae0ec ,
+                inset 0 -15px 10px  -15px #aae0ec,
+                inset 15px 0 15px  -15px #aae0ec,
+                inset -15px 0 15px  -15px #aae0ec;
+    display: none;            
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+#SectionNav > li {
+    background: url(images/iconMenuArrow.png) 4px 7px no-repeat, url(images/bgSectionNav.png) left bottom no-repeat;
+    cursor: pointer;
+    padding: 7px 26px 7px 26px;
+    
+}
+
+#SectionNav > li:hover {
+    color: #a40000;
+    cursor: pointer;
+}
+
+            
+
+#SectionNav > ul  li{
+    border-bottom: #cdebf3 1px solid;
+    color: #27accf;
+    font-weight: bold ;
+    padding: 10px 0;
+}
+
+#SectionNav > ul  li.Active {
+    border-bottom: none;
+    color: #27accf !important;
+    font-weight: bold ;
+}
+
+#SectionNav > li span, #SectionNav > li a, #SectionNav > ul li a {
+    border-bottom: #5e5e5e 1px dotted !important;
+    color: #000000 !important;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#SectionNav > li span:hover, #SectionNav > li a:hover, #SectionNav > ul li a:hover {
+    border-bottom: #a40000 1px dotted !important;
+    color: #a40000 !important;
+}
+
+#SectionNav > li.Active  {
+    background:  url(images/bgSectionNavActive.png) bottom repeat-x, url(Images/bgSectionNavActiveBack.png);
+    background-color: #96e3f5;
+    border-bottom: none !important;
+    margin-top: -2px;
+}  
+
+
+#SectionNav > li.Active  span{
+    border-bottom: none !important;
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px rgba(26, 127, 157, 1);
+}  
+
+/* Меню разделов : --конец-- */ 

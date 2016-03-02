@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/                      
+                                                                                  
+.DayOfNews {
+    font-size: 1.37rem !important;
+    font-weight: bold;
+    margin: 0 !important;
+}
+
+.MonthOfNews {
+    font-size: 0.68rem !important;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.YearOfNews {
+    font-size: 0.81rem !important;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.TitleOfNews {
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}   
+
+.AnonsOfNews {
+    font-size: 0.8rem !important;
+}        
+
+.ThemeOfNews {
+    background: url(images/bgThemeOfNews.png) no-repeat 0.5em 0.7em;
+    color: #959595;
+    border-top: #cecece 1px solid;
+    font-size: 0.68rem;
+    padding: 0.5em 0 0 2em;   
+    
+}
+
+.SignatureOfNews {
+    color: #959595;
+    border-top: #cecece 1px solid;
+    font-size: 0.68rem;
+    padding: 0.5em 0 0 0;
+   
+}
+
+.SuperNews {
+    margin: 1em !important;
+}
+
+.ItemOfNewsList, .ItemOfHotNews {
+    margin: 1em 0 !important;
+}
+
+.ItemOfNewsList td, .ItemOfHotNews td, .SuperNews td {
+    background: #FFFFFF !important;
+    border: 0 !important;
+    padding: 0.5em !important;
+    vertical-align: top !important;
+}  
+
+
+/* зададим ширины  ячеек*/
+/* первая ячейка с картинкой*/
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(1),
+.ItemOfHotNews tr:nth-of-type(1) td:nth-of-type(1) {
+    width: 1em !important;
+    text-align: left;
+    padding: 0;
+}
+
+
+/* размер картинки в первой ячейке*/
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(1) img,
+.ItemOfHotNews tr:nth-of-type(1) td:nth-of-type(1) img {
+    width: 3em !important;
+    text-align: left;
+    padding: 0;
+}
+
+
+/* вторая ячейка с датой новости или временем для горячей новости */
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(2),
+.ItemOfHotNews tr:nth-of-type(1) td:nth-of-type(2)
+    {
+    width: 1em !important;
+}    
+
+/* третья ячейка с темой новости */
+.ItemOfNewsList tr:nth-of-type(1) td:nth-of-type(3){
+    width: 60em  !important;
+}  
+
+.HotNewsTime {
+    color: #de2930;
+    font-size: 0.93rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0.3em 0 0 0 !important;
+}
+
+.SuperNews {
+    width: 100%;
+}
+
+.SuperNews h2 {
+    color: #de2930;
+    font-size: 0.93rempx;
+    font-weight: normal;
+    margin: 1em 0;
+}
+                                       

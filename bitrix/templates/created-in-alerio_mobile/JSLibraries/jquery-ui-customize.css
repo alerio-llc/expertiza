@@ -1,0 +1,14 @@
+div#ui-datepicker-div {
+   width: 11.25em;
+}  
+                
+ table.ui-datepicker-calendar, table.ui-datepicker-title span {
+                
+   font-size: 0.8em !important; 
+}  
+   
+   
+.ui-datepicker .ui-datepicker-title {
+	font-size: 0.8em;
+	line-height: 1.95em;
+	}                 

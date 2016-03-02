@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/                      
+                      
+#GeneralNav {
+    background: url(images/bgShadowBottom.png) bottom no-repeat, url(images/bgGeneralNav.png) top repeat-x; 
+    height: 51px;
+    margin: 0; 
+    padding: 0;
+    width: 1260px; 
+}
+    #GeneralNav li {
+        background: url(images/LineDivisionGeneralNavActive.png) left center no-repeat, url(images/bgGeneralNavActive.png) repeat-x;  
+        color: #ffffff; 
+        display: inline-block;
+        font-size: 19px; 
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 315px;
+    }
+    
+    #GeneralNav li:first-child {
+        background: url(images/bgGeneralNavActive.png) repeat-x;
+    }
+    
+        #GeneralNav li p{
+            line-height: 250%;
+            margin: 0 !important;
+        }
+        
+            #GeneralNav li p a {
+                background: url(images/LineDivisionGeneralNav.png) left center no-repeat, url(images/bgGeneralNav.png) repeat-x; 
+                text-decoration: none; color: #ffffff;
+                display: block;
+                padding: 0;
+                height: 45px;
+                
+            }
+            
+            #GeneralNav li:first-child p a {
+                background: url(images/bgGeneralNav.png) repeat-x; 
+                text-decoration: none; color: #ffffff;
+                display: block;
+                padding: 0;
+                height: 45px;
+                
+            }
+            
+            #GeneralNav li p a:hover {
+                background: url(images/LineDivisionGeneralNavActive.png) left center no-repeat, url(images/bgGeneralNavActive.png) repeat-x ; 
+            }
+            
+            #GeneralNav li:first-child p a:hover {
+                background: url(images/bgGeneralNavActive.png) repeat-x ; 
+            }
+            
+            #GeneralNav li p a img {
+                vertical-align: sub !important;
+            }
+            

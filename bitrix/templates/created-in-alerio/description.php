@@ -1,0 +1,1 @@
+<?$arTemplate = array("NAME"=>"Основная страница", "DESCRIPTION"=>"");?>

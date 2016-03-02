@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/                      
+                                                                                  
+.DayOfMassmedia {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 !important;
+}
+
+.MonthOfMassmedia {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.YearOfMassmedia {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 !important;
+}     
+
+.TitleOfMassmedia {
+    font-size: 14px;
+    margin: 0 !important;
+    padding: 0 !important;
+}   
+
+.AnonsOfMassmedia {
+    font-size: 12px;
+}        
+
+.ThemeOfMassmedia {
+	background: url(images/bgThemeOfNews.png) no-repeat 5px 8px;
+	color: #959595;
+	border-top: #cecece 1px solid;
+    font-size: 11px;
+    padding: 3px 0 0 23px;
+    text-shadow: 0px -1px 0px #efefef;
+}
+
+.SignatureOfMassmedia {
+    color: #cecece;
+    border-top: 1px solid;
+    font-size: 11px;
+    padding: 3px 0 0 0;
+}
+
+.ItemOfMassmediaList {
+    margin: 10px 0 !important;
+    
+}
+
+.ItemOfMassmediaList td {
+    background: #FFFFFF !important;
+    border: 0 !important;
+    padding: 5px !important;
+    vertical-align: top !important;
+}  
+
+
+.ItemOfMassmediaList tr:nth-of-type(1) td:nth-of-type(1) {
+    /* border: red 1px solid !important; */
+    width: 50px !important;
+} 
+
+.ItemOfMassmediaList tr:nth-of-type(1) td:nth-of-type(2){
+    /*border: green 1px solid !important;*/
+    width: 650px  !important;
+}  
+
+
+                                       

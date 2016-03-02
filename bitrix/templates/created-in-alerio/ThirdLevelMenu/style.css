@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/
+
+
+    
+.ThirdLevelMenu {
+   box-shadow:         0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+   -moz-box-shadow:    0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+   -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.80);
+   width: 720px;
+}
+ .ThirdLevelMenu td {
+     background: #ffffff !important;  
+     font-size: 12px !important;
+     padding: 7px !important;
+     vertical-align: middle;
+     width:1%;
+     
+ }
+ 
+ 
+ .ThirdLevelMenu td a {
+    border-bottom: #000000 1px dotted !important;
+    color: #000000 !important;
+    text-decoration: none;
+    
+    }
+    
+  .ThirdLevelMenu td  a:hover {
+    border-bottom: #a40000 1px dotted !important;
+    color: #a40000 !important;
+ }
+    
+ .ThirdLevelMenu td.active span {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    border-bottom: #f39999 2px solid !important; 
+ }
+     

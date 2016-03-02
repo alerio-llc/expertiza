@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/
+#RealTimer {
+    display: table-cell;
+    font-size: 12px;
+    padding: 7px 15px 3px 15px;
+    text-align: left; 
+    vertical-align: middle; 
+    width: 30%; 
+}

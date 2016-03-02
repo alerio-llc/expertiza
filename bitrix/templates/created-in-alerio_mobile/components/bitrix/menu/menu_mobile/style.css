@@ -1,0 +1,158 @@
+/*div.menu-sitemap-tree > ul
+{
+	list-style:none;
+	margin:0 !important; padding:0 !important;
+    display:block;
+	position: relative; *//*IE bug*/  
+    /*background-color: #d8ebfa; 
+
+}
+.menu-sitemap-tree{
+	height:100%;
+}	
+div.menu-sitemap-tree > ul > li
+{   
+	padding: 10px 0px;
+    list-style:none;
+    display:inline-block !important;
+	height:90px;
+    width: 16.3%;
+    text-align:center;
+	vertical-align:top;
+	border-top:0.3em solid #d8ebfa;
+}
+
+
+div.menu-sitemap-tree ul > li > a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+div.menu-sitemap-tree .active{
+	border-top:0.3em solid #005b91;
+	background-color:#c2dff3;
+	
+	
+}
+div.menu-sitemap-tree .active .item-text{
+	color:#005b91;
+}
+
+
+div.menu-sitemap-tree li.close ul
+{
+	display: none ;
+}
+
+
+.mainMenu{
+	padding: 1% 0 1.5% 0;
+	z-index:99;
+	border-bottom:0.3em solid #005b91;
+	position:absolute !important;
+	display:block;	
+	left:0;
+	width: 100% !important;
+	top:100%;
+	margin:0 !important;
+	background: rgba(194, 223, 243, 1) !important;
+	text-align:left;
+	list-style:none !important;
+}
+.main-menu  li{
+	line-height: 160%;
+	  margin: 0 auto !important;
+    max-width: 960px !important;
+    min-width: 350px !important;
+    width: 90% !important;
+}*/
+
+#TopBar {
+		          background-color:  #d8ebfa;
+                   position: relative;
+		    }
+
+		    
+			    #GeneralNav {
+                    margin: 0;
+			        white-space: nowrap;
+			          
+			    }
+			    
+			    #GeneralNav > li {
+			         display: inline-block;
+			         /* IT-отдел Службы забраковал ссылку на основную версию, расположенную в меню, настояли на ссылке в центре футера : --начало-- */
+                     /*width: 14%;*/
+                     width: 16.3%;       
+                     /* IT-отдел Службы забраковал ссылку на основную версию, расположенную в меню, настояли на ссылке в центре футера : --конец-- */
+			         vertical-align: top;
+			         padding: 0;
+			    }
+				
+				#GeneralNav > li.Selected > a{
+					 color: #005b91;
+                     background: #c2dff3;
+                     border-top-color: #005b91;
+				}
+			    
+			    #GeneralNav > li > a {
+			         border-top: solid 0.3em transparent; 
+			        /* color: #57abe3; */
+			        color:#64a3ca;
+			         display: block;
+			         line-height: 130%;
+			         padding: 15% 1%;
+			         text-decoration: none;
+                     text-align: center;
+                     white-space: normal;
+			    }
+			    
+			    #GeneralNav > li > a span {
+			        display: flex;
+				    height: 1.250em;
+				    flex-direction: column;
+				    justify-content: center;
+				    font-size: 1.2em;
+				    font-weight: 600;
+			    }
+			    
+			    #GeneralNav > li.Active > a{
+                     color: #005b91;
+                     background: #c2dff3;
+                     border-top-color: #005b91;  /*TODO: посмотреть как задать границу в относительных единицах */
+					 height:90px;
+                }
+			    
+			    #GeneralNav > li > ul {
+			       /*  background:  url(./GeneralNav/images/arrow.png) no-repeat bottom center, url(./GeneralNav/images/bg.png) repeat-x bottom center, rgba(194,223,243,100); */
+			         background: rgba(194, 223, 243, 1);
+			         display: none;
+			         left: 0;
+			         padding: 1% 0 1.5% 0;
+			         position: absolute;
+			         top: 100%;
+			         width: 100%;
+			         margin: 0;
+			         z-index: 99;
+			         border-bottom: solid 0.3em #005b91;
+			         list-style: none;
+			         
+			    }
+			    
+			    #GeneralNav > li > ul > li  {
+			         line-height: 160%;
+					 margin: 0 auto;
+                     max-width: 960px;
+                     min-width: 350px;
+                     width: 90%;
+			    }
+			    
+			    #GeneralNav > li > ul > li > a {
+			         font-size: 1em;
+			         color: #005b91;
+			    }

@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/
+
+#AdditionalNav {
+    background: #ffffff;
+    height: 46px;
+    font-size: 16px; 
+    margin: 0; 
+    padding: 5px 10px; 
+    width: 1240px; 
+}
+
+    #AdditionalNav li {
+        background: url(images/LineDivisionAdditionalNav.png) left no-repeat;
+        display: inline-block; 
+        font-size: 14px;
+        padding: 6px 20px; 
+        padding: 7px 20px; 
+        width: 372px;     
+    }
+    
+    #AdditionalNav li:first-child {
+        background: none;
+    }
+    
+        #AdditionalNav li a {
+            color: #000000; 
+            border-bottom: 1px dotted;
+            text-decoration: none;    
+        }
+        
+            #AdditionalNav li a:hover {
+                color: #a40000;
+            }
+            
+            #AdditionalNav li a:active {
+                color: #bd110d;
+            }
+        
+    
