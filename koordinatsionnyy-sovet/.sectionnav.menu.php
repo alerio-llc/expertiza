@@ -8,7 +8,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Застройщикам", 
+		"Застройщикам и экспертам", 
 		"/koordinatsionnyy-sovet/zastroyshchikam.php", 
 		Array(), 
 		Array(), 

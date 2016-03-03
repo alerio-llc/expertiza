@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001456944896';
-$dateexpire = '001456948496';
+$datecreate = '001457003802';
+$dateexpire = '001457007402';
 $ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:11:{s:20:"bitrix.sitecorporate";a:2:{s:2:"ID";s:20:"bitrix.sitecorporate";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:05";}s:11:"bitrixcloud";a:2:{s:2:"ID";s:11:"bitrixcloud";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:09";}s:6:"clouds";a:2:{s:2:"ID";s:6:"clouds";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:12";}s:11:"compression";a:2:{s:2:"ID";s:11:"compression";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:15";}s:7:"fileman";a:2:{s:2:"ID";s:7:"fileman";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:19";}s:6:"iblock";a:2:{s:2:"ID";s:6:"iblock";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:38";}s:4:"main";a:2:{s:2:"ID";s:4:"main";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:55:33";}s:7:"perfmon";a:2:{s:2:"ID";s:7:"perfmon";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:56:59";}s:6:"search";a:2:{s:2:"ID";s:6:"search";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:57:05";}s:3:"seo";a:2:{s:2:"ID";s:3:"seo";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:57:11";}s:14:"socialservices";a:2:{s:2:"ID";s:14:"socialservices";s:11:"DATE_ACTIVE";s:19:"2016-10-01 12:57:16";}}}';
 return true;
 ?>

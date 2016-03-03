@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Застройщикам");
+$APPLICATION->SetTitle("Застройщикам и экспертам");
 ?> 
 <ul> 
   <li>Для сведения застройщиков. Перечень организаций, уполномоченных на выдачу ТУ для подключения к сетям инженерно-технического обеспечения и согласование ТУ для субабонентов. (PDF, <a href="/data/documents/ForCustomer.pdf" target="_blank" >скачать</a>) 					 </li>
